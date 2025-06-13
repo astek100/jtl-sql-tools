@@ -1,3 +1,34 @@
+/*
+------------------------------------------------------------
+ JTL-Wawi SQL: Rechnungsübersicht (mit Kunden und Summen)
+------------------------------------------------------------
+
+Diese Abfrage zeigt bis zu 10.000 Rechnungen aus der JTL-Wawi-Datenbank `eazybusiness`.
+Sie enthält folgende Informationen:
+
+- Rechnungsnummer
+- Erstellungsdatum der Rechnung
+- Zugehörige Auftragsnummer
+- Kundennummer & Kundenname (aus cEbayName)
+- Zahlungsstatus der Rechnung (Y/N)
+- Rechnungsstatus
+- Gesamtsumme der Rechnung (berechnet aus fVKNetto × Menge)
+
+Voraussetzung:
+- Du musst mit SQL Server Management Studio (SSMS) verbunden sein
+- Die Datenbank `eazybusiness` muss aktiv sein
+
+So verwendest du die Abfrage:
+1. Öffne SSMS
+2. Wähle links die Datenbank `eazybusiness`
+3. Kopiere den gesamten SQL-Text in das Abfragefenster
+4. Führe die Abfrage mit [F5] aus
+
+Optional:
+- Filter für offene Rechnungen: WHERE r.cBezahlt = 'N'
+- Zeitraum einschränken: z. B. r.dErstellt >= '2025-01-01'
+*/
+
 -- Rechnungsübersicht für JTL-Wawi
 USE [eazybusiness];
 GO
