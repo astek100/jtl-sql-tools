@@ -1,0 +1,24 @@
+# Editor & IDE
+.vscode/
+.idea/
+*.code-workspace
+
+# Temporäre oder Backup-Dateien
+*.log
+*.tmp
+*.bak
+*.swp
+*.~*
+
+# Output-Verzeichnisse (z. B. CSV-Export)
+output/
+exports/
+berichte/
+
+# Systemdateien
+.DS_Store
+Thumbs.db
+
+# SQL Backup-Dateien
+*.sql.bak
+*.sql.tmp
